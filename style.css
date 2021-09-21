@@ -109,13 +109,11 @@ body{
     background: linear-gradient(133.9deg, rgba(243, 71, 122, 0.7) 0.24%, rgba(136, 76, 178, 0.7) 95.04%);
 }
 
-
-
-.flex2{
+.flex-0-5{
     flex: 0.5;
 }
 
-.flex5{
+.flex-1-5{
     flex: 1.5;
 }
 
@@ -245,12 +243,12 @@ body{
         flex-direction: column;
     }
 
-    .flex2{
+    .flex-0-5{
         flex: 0;
         padding: 10px 0px;
     }
 
-    .flex5{
+    .flex-1-5{
         flex: 0;
         padding: 10px 0px;
     }
