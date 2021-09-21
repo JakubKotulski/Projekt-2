@@ -28,11 +28,17 @@ body{
     margin-left: 10px;
 }
 
-.col-4 img{
+.header-img{
     padding: 5px 15px;
 }
 
-.col-4 .bell-dot{
+.search-input{
+    padding: 5px 20px;
+    width: 50%;
+    border: none;
+}
+
+.bell-dot{
     height: 8px;
     width: 8px;
     background-color: #F7685B;
@@ -42,24 +48,26 @@ body{
     right: 22px;
 }
 
-.col-4 .avatar-box img{
+.avatar-box img{
     border-radius: 50%;
     border: solid 2px orange;
     padding: 1px;
 }
 
-.row .col-lg-9 .tasks-info{
+.tasks-info{
     font-size: 36px;
     line-height: 54px;
     font-weight: 700;
     padding-bottom: 52px;
+    display: flex;
+    align-items: center;
 }
 
-.row .col-lg-9 .tasks-info span .pink-task-text{
+.tasks-info span .pink-task-text{
     color: pink;
 }
 
-.row .col-lg-9 .tasks-info #add-button{
+.tasks-info #add-button{
     background-color: #884CB2;
     border-radius: 10px;
     color: white;
@@ -67,9 +75,15 @@ body{
     font-size: 12px;
     line-height: 9px;
     margin-left: 20px;
+    display: flex;
+    align-items: center;
 }
 
-.row .col-lg-9 .task-header{
+.tasks-info #add-button .plus-icon{
+  margin-right: 5px;
+} 
+
+.task-header{
     font-size: 18px;
     line-height: 27px;
     padding-bottom: 52px;
@@ -185,14 +199,16 @@ body{
 
 .position-second{
     background-color: blue;
-    position: relative;
-    right: 10px;
+    /* position: relative;
+    right: 10px; */
+    margin-left:-10px;
 }
 
 .position-third{
     background-color: lightblue;
-    position: relative;
-    right: 20px;
+    /* position: relative;
+    right: 20px; */
+    margin-left:-10px;
 }
 
 .position-fourth{
@@ -201,8 +217,9 @@ body{
     font-weight: 500;
     font-size: 11px;
     line-height: 10.55px;
-    position: relative;
-    right: 30px;
+    /* position: relative;
+    right: 30px; */
+    margin-left:-10px;
 }
 
 .text-window{
@@ -272,13 +289,17 @@ body{
     .tasks-info span{
         font-size: 18px;
         text-align: center;
-    }
+    } 
 }
 
 @media only screen and (max-width: 400px){
    .tasks-info span{
        font-size: 18px;
    }
+
+   .containers-padding:last-of-type{
+    padding: 0px 0px;
+    }
 
    .search-text{
        display: none;
