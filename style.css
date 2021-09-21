@@ -18,10 +18,10 @@ body{
 }
 
 .containers-padding{
-    padding: 40px 30px;
+    padding: 40px 50px;
 }
 
-.col-8 .search-text{
+.search-text{
     color: #90A0B7;
     font-size: 12px;
     line-height: 15px;
@@ -48,17 +48,18 @@ body{
     padding: 1px;
 }
 
-.row .col-8 .tasks-info{
+.row .col-lg-9 .tasks-info{
     font-size: 36px;
     line-height: 54px;
     font-weight: 700;
+    padding-bottom: 52px;
 }
 
-.row .col-8 .tasks-info span .pink-task-text{
+.row .col-lg-9 .tasks-info span .pink-task-text{
     color: pink;
 }
 
-.row .col-8 .tasks-info #add-button{
+.row .col-lg-9 .tasks-info #add-button{
     background-color: #884CB2;
     border-radius: 10px;
     color: white;
@@ -66,4 +67,228 @@ body{
     font-size: 12px;
     line-height: 9px;
     margin-left: 20px;
+}
+
+.row .col-lg-9 .task-header{
+    font-size: 18px;
+    line-height: 27px;
+    padding-bottom: 52px;
+}
+
+.container-fluid{
+    display: flex;
+    align-items: center;
+}
+
+.container-fluid .task-theme{
+    display: flex;
+    align-items: center;
+}
+.task-theme-text{
+    margin-left: 5px;
+}
+
+.collaps{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: linear-gradient(133.9deg, rgba(243, 71, 122, 0.7) 0.24%, rgba(136, 76, 178, 0.7) 95.04%);
+}
+
+
+
+.flex2{
+    flex: 0.5;
+}
+
+.flex5{
+    flex: 1.5;
+}
+
+.status-first{
+    height: 17px;
+    width: 77px;
+    border-radius: 8.5px;
+    font-size: 11px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.status-first-orange{
+    background: rgba(242, 153, 74, 0.2);
+    color: #F2994A;
+}
+
+.status-first-blue{
+    color: #56CCF2;
+    background: rgba(86, 204, 242, 0.2);
+}
+
+.status-first-red{
+    background: rgba(235, 87, 87, 0.2);
+    color: #EB5757;
+}
+
+.status-first-green{
+    background: rgba(39, 174, 96, 0.2);
+    color:#27AE60;
+}
+
+.status-second{
+    display: flex;
+    align-items: center;
+}
+
+.status-second-collaps{
+    height: 8px;
+    width: 8px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid;
+    margin-right: 3px;
+}
+
+.status-second-text{
+    font-size: 12px;
+}
+
+.status-second-collaps-green{
+    border-color: #219653;
+}
+
+
+.status-second-collaps-orange{
+    border-color: yellow;
+}
+
+.status-second-collaps-red{
+    border-color: red;
+}
+
+.spectators{
+    display: flex;
+    align-items: center;
+}
+
+.oval{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.position-first{
+    background-color: #FBAC65;
+}
+
+.position-second{
+    background-color: blue;
+    position: relative;
+    right: 10px;
+}
+
+.position-third{
+    background-color: lightblue;
+    position: relative;
+    right: 20px;
+}
+
+.position-fourth{
+    background-color: green;
+    color: white;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 10.55px;
+    position: relative;
+    right: 30px;
+}
+
+.text-window{
+    background-color: #F2F2F2;
+}
+
+.inline{
+    display: flex;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.margin{
+    margin-left: 15px;
+}
+
+.col-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opacity{
+    opacity:30% ;
+}
+
+@media only screen and (max-width: 700px){
+    .container-fluid{
+        flex-direction: column;
+    }
+
+    .flex2{
+        flex: 0;
+        padding: 10px 0px;
+    }
+
+    .flex5{
+        flex: 0;
+        padding: 10px 0px;
+    }
+
+    .row .col-lg-9 .tasks-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #add-button{
+        margin-top: 15px;
+    }
+
+    .task-header{
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .inline{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .margin{
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .tasks-info span{
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 400px){
+   .tasks-info span{
+       font-size: 18px;
+   }
+
+   .search-text{
+       display: none;
+   }
+
+   .task-theme-text{
+       text-align: center;
+   }
+
+   .collaps{
+       display: none;
+   }
 }
