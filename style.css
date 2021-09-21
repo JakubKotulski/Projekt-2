@@ -238,6 +238,81 @@ body{
     opacity:30% ;
 }
 
+.message-section{
+    width: 100%;
+}
+
+.message-section .container-fluid{
+    display: flex;
+    padding-top: 10px;
+    padding-left: 0;
+}
+
+.message-section .container-fluid:first-child{
+align-items: start;
+}
+
+.message-avatar img{
+    border-radius: 50%;
+    border: solid 2px lightblue;
+    padding: 1px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.message-owner{
+    font-size: 12px;
+    line-height: 14.5px;
+}
+
+.message-status{
+    font-size: 10px;
+    line-height: 14px;
+    color: #7D859A;
+}
+
+.message-text{
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 500;
+    color: #555555;
+}
+
+.message-detail{
+    font-weight: 700;
+}
+
+.message-detail-pink{
+    color: #EB5757;
+}
+
+.info-about-send-message{
+    background: linear-gradient(90deg, #DAE4F4 0%, #D3DCF1 100%);
+    border-radius: 10px;
+    width: 100%;
+    color: #5787A4;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.message-status-margin{
+    margin-left: 15px;
+}
+
+.info-text{
+    font-size: 10px;
+    line-height: 15px;
+    color: #555555;
+    font-weight: 400;
+}
+
+.bold{
+    font-weight: bolder;
+}
+
+
 @media only screen and (max-width: 768px){
     .container-fluid{
         flex-direction: column;
