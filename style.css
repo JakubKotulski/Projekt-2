@@ -17,8 +17,8 @@ body{
     align-items: center;
 }
 
-#header-padding{
-    padding: 50px 30px;
+.containers-padding{
+    padding: 40px 30px;
 }
 
 .col-8 .search-text{
@@ -48,3 +48,22 @@ body{
     padding: 1px;
 }
 
+.row .col-8 .tasks-info{
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: 700;
+}
+
+.row .col-8 .tasks-info span .pink-task-text{
+    color: pink;
+}
+
+.row .col-8 .tasks-info #add-button{
+    background-color: #884CB2;
+    border-radius: 10px;
+    color: white;
+    padding: 8px 35px;
+    font-size: 12px;
+    line-height: 9px;
+    margin-left: 20px;
+}
