@@ -288,7 +288,7 @@ align-items: start;
 }
 
 .message-detail{
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .message-detail-pink{
@@ -300,7 +300,7 @@ align-items: start;
 }
 
 .message-detail-yellow{
-    color: yellowgreen;
+    color: orange;
 }
 
 .info-about-send-message{
@@ -365,6 +365,7 @@ align-items: start;
     padding: 5px 32px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
+    width: 75%;
 }
 
 .another-files{
@@ -377,6 +378,7 @@ align-items: start;
     font-size: 14px;
     line-height: 13px;
     color: #555555;
+    width: 20%;
 }
 
 .another-files:hover{
@@ -432,7 +434,7 @@ align-items: start;
     }
 
     .another-files{
-        margin-left: 40px;
+        margin-left: 20px;
     }
 }
 
