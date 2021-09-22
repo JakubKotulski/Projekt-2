@@ -315,7 +315,7 @@ align-items: start;
 }
 
 .message-status-margin{
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .info-text{
@@ -397,7 +397,7 @@ align-items: start;
 
 .file-description{
     display: flex;
-    align-items: center;
+    align-items: baseline;
     flex-direction: column;
     justify-content: space-evenly;
 }
@@ -411,6 +411,10 @@ align-items: start;
 }
 .file:hover{
     cursor: pointer;
+}
+
+.put-message-left{
+    padding-left: 50px;
 }
 
 .message-response{
